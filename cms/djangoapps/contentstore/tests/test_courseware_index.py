@@ -58,6 +58,14 @@ from xmodule.x_module import XModuleMixin
 
 class NonIndexableXBlock(XBlock):
     """XBlock for testing indexibility"""
+    def index_dictionary(self):
+        # The base class now has a default index_dictionary.
+        # In order to be non-indexable, we have to pretend that
+        # this method doesn't exist, by raising an exception
+        # note: it's not possible to remove the base class method
+        # from the subclass, without affecting the base class
+        raise AttributeError()
+
 
 COURSE_CHILD_STRUCTURE = {
     "course": "chapter",
