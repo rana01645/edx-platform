@@ -4,18 +4,41 @@ exports[`ProblemBrowser Main component render with basic parameters 1`] = `
 <div
   className="problem-browser"
 >
-  <button
-    className="btn"
-    onBlur={[Function]}
+  <span
+    className={
+      Array [
+        "problem-selector",
+      ]
+    }
     onClick={[Function]}
-    onKeyDown={[Function]}
-    type="button"
   >
-    Select a section or problem
-  </button>
+    <span>
+      Select a section or problem
+    </span>
+    <span
+      style={
+        Object {
+          "float": "right",
+        }
+      }
+    >
+      <div>
+        <span
+          aria-hidden={true}
+          className="fa fa-sort"
+          id="Icon2"
+        />
+      </div>
+    </span>
+  </span>
   <input
     disabled={true}
     name="problem-location"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
     type="text"
     value={null}
   />
@@ -26,18 +49,41 @@ exports[`ProblemBrowser Main component render with selected block 1`] = `
 <div
   className="problem-browser"
 >
-  <button
-    className="btn"
-    onBlur={[Function]}
+  <span
+    className={
+      Array [
+        "problem-selector",
+      ]
+    }
     onClick={[Function]}
-    onKeyDown={[Function]}
-    type="button"
   >
-    Select a section or problem
-  </button>
+    <span>
+      some-selected-block
+    </span>
+    <span
+      style={
+        Object {
+          "float": "right",
+        }
+      }
+    >
+      <div>
+        <span
+          aria-hidden={true}
+          className="fa fa-sort"
+          id="Icon2"
+        />
+      </div>
+    </span>
+  </span>
   <input
     disabled={true}
     name="problem-location"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
     type="text"
     value="some-selected-block"
   />

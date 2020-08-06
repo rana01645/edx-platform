@@ -65,7 +65,7 @@ describe('ProblemBrowser Main component', () => {
         selectedBlock={'some-selected-block'}
       />,
     );
-    component.find(Button).simulate('click');
+    component.find('.problem-selector').simulate('click');
     expect(component.find(BlockBrowser)).toBeTruthy();
   });
 });
