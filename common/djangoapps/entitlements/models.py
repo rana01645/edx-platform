@@ -266,6 +266,7 @@ class CourseEntitlement(TimeStampedModel):
                 'SHORT_DATE'
             )
         expired_at = strftime_localized(self.expired_at_datetime, 'SHORT_DATE') if self.expired_at_datetime else None
+        course_run_key = self.enrollment_course_run.course_id if self.enrollment_course_run else None
 
         return {
             'uuid': str(self.uuid),
