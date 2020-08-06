@@ -23,7 +23,6 @@ WAFFLE_FLAG_NAMESPACE = WaffleFlagNamespace(name=WAFFLE_NAMESPACE)
 DATA_DOWNLOAD_V2 = CourseWaffleFlag(
     waffle_namespace=WaffleFlagNamespace(name=WAFFLE_NAMESPACE, log_prefix='instructor_dashboard: '),
     flag_name='enable_data_download_v2',
-    flag_undefined_default=False
 )
 
 # Waffle flag to use optimised is_small_course.
@@ -41,7 +40,6 @@ DATA_DOWNLOAD_V2 = CourseWaffleFlag(
 OPTIMISED_IS_SMALL_COURSE = WaffleFlag(
     waffle_namespace=WAFFLE_FLAG_NAMESPACE,
     flag_name='optimised_is_small_course',
-    flag_undefined_default=False
 )
 
 
